@@ -17,16 +17,30 @@
     <li>Help is available.
   </ul>
 
-  <a href="p10-fin-report.html">Your Monthly summary</a>
-
-
+  <a href="p10-fin-report.html" class="govuk-!-font-weight-bold">Your Monthly summary</a>
 
 <div class = "finimage">
   <img src="/public/images/Piechart.svg" alt=""/>
-  </div>
+</div>
 
-  <div class = "finimage">
+<div class = "finimage">
     <img src="/public/images/Amberslopechart.svg" alt=""/>
-    </div>
+</div>
+
+{{ govukCheckboxes({
+  classes: "govuk-radios--inline",
+  idPrefix: "changed-name",
+  name: "changed-name",
+  fieldset: {
+  },
+  items: [
+    {
+      value: "yes",
+      text: "Book your next financial health check."
+    }
+  ]
+}) }}
+
+
 
 {% endblock %}

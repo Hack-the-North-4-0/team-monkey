@@ -18,5 +18,18 @@
   </div>
 
 
+  {{ govukCheckboxes({
+    classes: "govuk-radios--inline",
+    idPrefix: "changed-name",
+    name: "changed-name",
+    fieldset: {
+    },
+    items: [
+      {
+        value: "yes",
+        text: "Book your next financial health check."
+      }
+    ]
+  }) }}
 
 {% endblock %}
