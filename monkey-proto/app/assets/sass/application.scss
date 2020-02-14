@@ -73,3 +73,38 @@ $govuk-assets-path: '/govuk/assets/';
   color: #777;
   margin-bottom: 2px;
 }
+
+.finimage {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.banner-red {
+  color: white;
+  background-color: #d4351c;
+  text-align: center;
+  padding: 10px;
+}
+
+.banner-amber {
+  color: white;
+  background-color: #d18e0f;
+  text-align: center;
+  padding: 10px;
+}
+
+.banner-green {
+  color: white;
+  background-color: #00703c;
+  text-align: center;
+  padding: 10px;
+}
+
+
+.govuk-main-wrapper--auto-spacing:first-child, .govuk-main-wrapper--l {
+  padding-top: 3px;
+}
+

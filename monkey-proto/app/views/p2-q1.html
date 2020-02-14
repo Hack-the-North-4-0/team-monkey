@@ -8,28 +8,41 @@
 
 <form action="p3-q2" method="get">
 
-{% set loaddetails %}
-{{ govukInput({
-  name: amount,
-  label: {text:"How much do you owe"},
-  classes: "govuk-input--width-5"
-})
-}}
+<div class="banklist">
 
-{{ govukDateInput({
-  name: amount,
-  fieldset: {
+  {{ govukTable({
+    caption: "Your credit cards",
+    firstCellIsHeader: true,
+    head: [
+      {
+        text: "Account"
+      },
+      {
+        text: "Outstanding Amount", format: "numeric"
+      }
+    ],
+    rows: [
+      [
+        {
+          text: "HSBC"
+        },
+        {
+          text: "£1092.80", format: "numeric"
+        }
+      ],
+      [
+        {
+          text: "Next"
+        },
+        {
+          text: "£64.30", format: "numeric"
+        }
+      ]
+    ]
+  }) }}
 
-legend: {
-      text: "When is repayment due",
-      classes: "govuk-filedset__legend--m"
-    }
+</div>
 
-  }
-})
-}}
-
-{% endset %}
 
 {{ govukRadios({
   classes: "govuk-radios--inline",
@@ -37,21 +50,18 @@ legend: {
   name: "changed-name",
   fieldset: {
     legend: {
-      text: "Do you currently have a short term loan?",
+      text: "Do you have any other credit cards or store cards?",
       isPageHeading: true,
-      classes: "govuk-fieldset__legend--xl"
+      classes: "govuk-fieldset__legend--l"
     }
   },
   hint: {
-    text: "This includes pay day loans, or money you owe to another person."
+    text: "Tell us about any other cards that you are responsible for paying for"
   },
   items: [
     {
       value: "yes",
-      text: "Yes",
-      conditional: {
-        html: loaddetails
-      }
+      text: "Yes"
     },
     {
       value: "no",
@@ -63,7 +73,6 @@ legend: {
 {{ govukButton({
   text: "Continue"
 }) }}
-
 </form>
 
 {% endblock %}

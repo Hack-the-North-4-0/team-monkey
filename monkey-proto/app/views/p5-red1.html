@@ -6,22 +6,35 @@
 
 {% block content %}
 
-<h1 class="govuk-heading-xl">You need help</h1>
+<h1 class="govuk-heading-xl banner-red">You need help</h1>
 
 <ul class="govuk-list govuk-list--bullet">
 <li>You have a serious debt problem.
 <li>Help is available.
 </ul>
 
-<p class="govuk-body">Share this with your work coach so they can help find the support you need.</p>
+<form action="p8-list1.html" method="get">
+
+  {{ govukCheckboxes({
+    classes: "govuk-radios--inline",
+    idPrefix: "changed-name",
+    name: "changed-name",
+    fieldset: {
+    },
+    items: [
+      {
+        value: "yes",
+        text: "Share this with your work coach so they can help find the support you need."
+      }
+    ]
+  }) }}
 
 {{ govukButton({
   text: "Ask for help"
 }) }}
 
-<div>
-<a href="p8-list1.html">To seek help the following organisations can assist you.</a>
 
-</div>
+</form>
+
 
 {% endblock %}
