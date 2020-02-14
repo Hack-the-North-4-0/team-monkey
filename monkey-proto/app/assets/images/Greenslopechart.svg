@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 422.6 418.3" style="enable-background:new 0 0 422.6 418.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#7AC943;}
+	.st1{fill:#FF931E;}
+	.st2{fill:#FF1D25;}
+	.st3{font-family:'Arial-BoldMT';}
+	.st4{font-size:20px;}
+	.st5{stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st6{fill:#626A6E;}
+	.st7{font-family:'ArialMT';}
+	.st8{font-size:15px;}
+	.st9{letter-spacing:-1;}
+</style>
+<title>Greenslopechart</title>
+<path class="st0" d="M114.7,84.5v27.8H8.2c-6,0-13.1-5.6-3.2-10.6c3.3-1.6,8.5-3.2,16.2-4.4L114.7,84.5z"/>
+<polygon class="st1" points="277.1,63.9 277.1,112.3 127.2,112.3 127.2,84.5 "/>
+<path class="st2" d="M422.6,59.3v41c0,6.6-5.4,12-12,12l0,0H290.1V63.9l120.5-16.6C417.3,47.3,422.6,52.7,422.6,59.3z"/>
+<text transform="matrix(1 0 0 1 5.73 17.16)" class="st3 st4">A</text>
+<text transform="matrix(1 0 0 1 19.43 17.16)" class="st3 st4">verage you are spending on food</text>
+<rect x="72.2" y="76.8" class="st5" width="5" height="36"/>
+<path class="st0" d="M114.7,238.5v27.8H8.2c-6,0-13.1-5.6-3.2-10.5c3.3-1.6,8.5-3.2,16.2-4.5L114.7,238.5z"/>
+<polygon class="st1" points="277.1,217.9 277.1,266.3 127.2,266.3 127.2,238.5 "/>
+<path class="st2" d="M422.6,213.3v41c0,6.6-5.4,12-12,12H290.1v-48.5l120.5-16.5C417.3,201.3,422.6,206.7,422.6,213.3L422.6,213.3z"
+	/>
+<text transform="matrix(1 0 0 1 5.73 176.16)" class="st3 st4">A</text>
+<text transform="matrix(1 0 0 1 19.43 176.16)" class="st3 st4">verage you are spending on transport</text>
+<text transform="matrix(1 0 0 1 5.73 200.58)" class="st6 st7 st8 st9">Y</text>
+<text transform="matrix(1 0 0 1 14.36 200.58)" class="st6 st7 st8">ou are spending around the Universal Credit average</text>
+<rect x="139.6" y="220.3" class="st5" width="5" height="47"/>
+<path class="st0" d="M114.7,389.5v27.8H8.2c-6,0-13.1-5.6-3.2-10.5c3.3-1.6,8.5-3.2,16.2-4.5L114.7,389.5z"/>
+<polygon class="st1" points="277.1,368.9 277.1,417.3 127.2,417.3 127.2,389.5 "/>
+<path class="st2" d="M422.6,364.3v41c0,6.6-5.4,12-12,12H290.1v-48.5l120.5-16.5C417.3,352.3,422.6,357.7,422.6,364.3z"/>
+<text transform="matrix(1 0 0 1 5.73 319.16)" class="st3 st4">A</text>
+<text transform="matrix(1 0 0 1 19.43 319.16)" class="st3 st4">verage you are spending on clothes</text>
+<text transform="matrix(1 0 0 1 5.73 343.58)" class="st6 st7 st8 st9">Y</text>
+<text transform="matrix(1 0 0 1 14.36 343.58)" class="st6 st7 st8">ou are spending below the Universal Credit average</text>
+<text transform="matrix(1 0 0 1 5.73 40.58)" class="st6 st7 st8 st9">Y</text>
+<text transform="matrix(1 0 0 1 14.36 40.58)" class="st6 st7 st8">ou are spending below the Universal Credit average</text>
+<rect x="72.7" y="381.3" class="st5" width="5" height="36"/>
+</svg>
