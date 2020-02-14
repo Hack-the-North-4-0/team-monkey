@@ -1,0 +1,27 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Hack The North 4
+        <span class="govuk-caption-xl">{{releaseVersion}}</span>
+      </h1>{{releaseVersion | log }}
+      <p>
+        Team Monkey
+      </p>
+
+
+      <a href="p1-welcome">The first page</a>
+
+
+    </div>
+</div>
+
+{% endblock %}

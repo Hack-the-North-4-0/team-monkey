@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Check your financial health
+{% endblock %}
+
+{% block content %}
+
+<h1 class="govuk-heading-xl">Welcome</h1>
+
+<p class="govuk-body-l">This is a confidential service. We will not pass your data to anyone without your consent.</p>
+
+<p class="govuk-body">To provide you with advice we need your permission access to your account details.</p>
+
+{{ govukCheckboxes({
+  classes: "govuk-radios--inline",
+  idPrefix: "changed-name",
+  name: "changed-name",
+  fieldset: {
+  },
+  items: [
+    {
+      value: "yes",
+      text: "allow access to your universal credit"
+    },
+    {
+      value: "no",
+      text: "allow access to your bank account"
+    }
+  ]
+}) }}
+
+
+{{ govukButton({
+  text: "Start your financial heath check",
+  href: "p2-q1",
+  isStartButton: true
+}) }}
+
+{% endblock %}

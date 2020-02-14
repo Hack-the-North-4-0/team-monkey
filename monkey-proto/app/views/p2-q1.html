@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Check your financial health
+{% endblock %}
+
+{% block content %}
+
+<form action="p3-q2" method="get">
+
+{% set loaddetails %}
+{{ govukInput({
+  name: amount,
+  label: {text:"How much do you owe"},
+  classes: "govuk-input--width-5"
+})
+}}
+
+{{ govukDateInput({
+  name: amount,
+  fieldset: {
+
+legend: {
+      text: "When is repayment due",
+      classes: "govuk-filedset__legend--m"
+    }
+
+  }
+})
+}}
+
+{% endset %}
+
+{{ govukRadios({
+  classes: "govuk-radios--inline",
+  idPrefix: "changed-name",
+  name: "changed-name",
+  fieldset: {
+    legend: {
+      text: "Do you currently have a short term loan?",
+      isPageHeading: true,
+      classes: "govuk-fieldset__legend--xl"
+    }
+  },
+  hint: {
+    text: "This includes pay day loans, or money you owe to another person."
+  },
+  items: [
+    {
+      value: "yes",
+      text: "Yes",
+      conditional: {
+        html: loaddetails
+      }
+    },
+    {
+      value: "no",
+      text: "No"
+    }
+  ]
+}) }}
+
+{{ govukButton({
+  text: "Continue"
+}) }}
+
+</form>
+
+{% endblock %}

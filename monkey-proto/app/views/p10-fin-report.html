@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Check your financial health
+{% endblock %}
+
+{% block content %}
+
+
+<h1 class="govuk-heading-xl">Monthly summary</h1>
+
+{{ govukTable({
+  caption: "Income",
+  firstCellIsHeader: false,
+  rows: [
+    [{text: "Universal Credit"}, {text:"£435", format: "numeric"}],
+    [{text: "Paid work"}, {text:"£295", format: "numeric"}],
+    [{text: "Total", classes:"govuk-table__header"}, {text:"£730", format: "numeric", classes:"govuk-table__header"}]
+  ]
+})
+}}
+
+{{ govukTable({
+  caption: "Out goings",
+  firstCellIsHeader: false,
+  rows: [
+    [{text: "Rent"}, {text:"£450", format: "numeric"}],
+    [{text: "Utilities"}, {text:"£86", format: "numeric"}],
+    [{text: "Phone"}, {text:"£24", format: "numeric"}],
+    [{text: "Food"}, {text:"£224", format: "numeric"}],
+    [{text: "Travel"}, {text:"£63", format: "numeric"}],
+    [{text: "Cash items"}, {text:"£50", format: "numeric"}],
+    [{text: "Total", classes:"govuk-table__header"}, {text:"£897", format: "numeric", classes:"govuk-table__header"}]
+  ]
+})
+}}
+
+{{ govukTable({
+  firstCellIsHeader: false,
+  rows: [
+    [{text: "Balance", classes:"govuk-table__header negativetext"}, {text:"£-187", format: "numeric", classes:"negativetext"}]
+  ]
+})
+}}
+
+<p class="govuk-body">You are currently spending £187 more each month than you are earning.</p>
+
+{{govukBackLink({
+  text: "Back", href: "p6-amber1"
+})}}
+
+
+{% endblock %}
